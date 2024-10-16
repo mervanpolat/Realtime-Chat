@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Einheitskreis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Einheitskreis</h2>
+  <div class="slider-container">
+    <!-- Hidden range input for accessibility -->
+    <input type="range" id="angleSlider" min="0" max="360" value="0" step="1">
+    <!-- Custom slider track -->
+    <div class="custom-slider" id="customSlider">
+      <div class="slider-track"></div>
+      <div class="slider-thumb" id="sliderThumb"></div>
+    </div>
+  </div>
+  <p id="angleLabel">Winkel: 0°</p>
+  <p id="radianLabel">Winkel: 0 rad</p> <!-- Neues Element für Radiant -->
+  <canvas id="circleCanvas" width="400" height="400"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
